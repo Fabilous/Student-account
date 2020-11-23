@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>4 - Payment Method</title>
+    <meta name="description" content="LOAP is COOL">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#d44a49">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    
+    <link rel=" stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <!-- Extra Tags -->
+    <meta property="og:image" content="assets/img/shake-your-future-og.jpg"/>
+    <meta property="og:description" content="LOAP is COOL" />
+
+    
+
+      
+  </head>
+  <body>
+    
+    <div class="up-1" id="header">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-8">
+                  <img src="assets/img/ebs-logo.svg" alt="EBS logo" class="img-fluid" id="logo">
+              </div>
+              <div class="col-4 text-right">
+               <a href="#" id="login-link" data-toggle="modal" data-target="#login-register-modal">Login</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="main-content">
+      
+      
+
+      
+    <!-- main content start -->
+        
+      <div class="container">
+              
+
+    <div class="row">
+      <div class="col-12">    
+          <h2>Payment method</h2>
+          
+          <img src="assets/img/payment-logos-sequra.png" alt="payment logos" id="payment-options-img" class="img-fluid">
+ 
+          <!-- PAYMENT METHOD 1-->
+          <div class="payment-method" id="pay-now">
+
+              <h3>Pay now</h3>
+              
+              <div class="description">
+                <p>Pay now the full cost of your course with our secure payment method.</p>
+                <p class="with-collapse-link">We apply <a data-toggle="collapse" href="#fee-full" role="button" aria-expanded="false" aria-controls="fee-full" class="collapse-link underlined">2% fee</a> on credit card payment.</p>
+                <div class="collapse" id="fee-full">
+                    <p class="collapse-paragraph">We all hate hidden charges and fees, but as our bank charges us 4% to process card payments unfortunately we have to charge an additional transaction fee of 2% if you pay online with a card.</p>
+                </div>
+              </div>
+
+                <div class="prices">
+                  <div class="row price">
+                    <div class="col-8">
+                      <span class="label"><strong>Total payment</strong></span>
+                    </div>
+                    <div class="col-4 text-right">
+                      <span class="price"><strong><span id="main-price">2115</span>€</strong></span>
+                    </div>
+                  </div> 
+                </div>
+
+
+
+              <a href="5.html" class="button yellow">Pay Now</a>
+
+          </div>  
+
+          <!-- PAYMENT METHOD 2-->
+          <div class="payment-method" id="pay-later-in-3">
+
+              <h3>Pay later in 3 intallments</h3>
+              <p>Pay later in 3 installments for an easy reservation method and fractioned payment without interests.</p>
+
+                <div class="collapse" id="fee-installments">
+                    <p class="collapse-paragraph">We all hate hidden charges and fees, but as our bank charges us 4% to process card payments unfortunately we have to charge an additional transaction fee of 2% if you pay online with a card.</p>
+                </div>
+                <p class="with-collapse-link">You can pay with credit card and <a data-toggle="collapse" href="#fee-installments" role="button" aria-expanded="false" aria-controls="fee-installments" class="collapse-link underlined">2% fee</a> or via <a data-toggle="collapse" href="#bank-transfer-installments" role="button" aria-expanded="false" aria-controls="bank-transfer-installments" class="collapse-link underlined">international bank transfer</a>.</p>
+                <div class="collapse" id="bank-transfer-installments">
+                  <p class="collapse-paragraph">Your bank will charge you to make international transfers, a typical cost is around 10€ per transfer, please contact your bank for exact payment details.</p>
+                </div>
+
+
+              <div class="prices">
+                  <div class="row price">
+                    <div class="col-8">
+                      <span class="label"><strong>Payment 1</strong>: due by Apr 1, 2020</span>
+                    </div>
+                    <div class="col-4 text-right">
+                      <span class="price"><strong><span id="installment-price">450</span>€</strong></span>
+                    </div>
+                  </div> 
+                  <div class="row price">
+                      <div class="col-8">
+                        <span class="label"><strong>Payment 2</strong>: due by Apr 15, 2020</span>
+                      </div>
+                      <div class="col-4 text-right">
+                        <span class="price"><strong><span id="installment-price-second">850</span>€</strong></span>
+                      </div>
+                  </div>
+                  <div class="row price">
+                      <div class="col-8">
+                        <span class="label"><strong>Payment 3</strong>: due by Jun 15, 2020</span>
+                      </div>
+                      <div class="col-4 text-right">
+                        <span class="price"><strong><span id="installment-price-third">850</span>€</strong></span>
+                      </div>
+                  </div>
+                </div>
+
+
+
+              <a href="5.html" class="button yellow">Pay Later in 3 Installments</a>
+
+          </div> 
+
+          <!-- PAYMENT METHOD 3-->
+          <div class="payment-method" id="pay-later-in-full">
+
+              <h3>Pay later in full</h3>
+              <p>Pay later in full in one rate.</p>
+
+              <div class="collapse" id="fee-later">
+                  <p class="collapse-paragraph">We all hate hidden charges and fees, but as our bank charges us 4% to process card payments unfortunately we have to charge an additional transaction fee of 2% if you pay online with a card.</p>
+              </div>            
+              <p class="with-collapse-link">You can pay with credit card and <a data-toggle="collapse" href="#fee-later" role="button" aria-expanded="false" aria-controls="fee-later" class="collapse-link underlined">2% fee</a> or via <a data-toggle="collapse" href="#bank-transfer-later" role="button" aria-expanded="false" aria-controls="bank-transfer-later" class="collapse-link underlined">international bank transfer</a>.</p>
+              <div class="collapse" id="bank-transfer-later">
+                <p class="collapse-paragraph">Your bank will charge you to make international transfers, a typical cost is around 10€ per transfer, please contact your bank for exact payment details.</p>
+              </div>
+
+              <div class="prices">
+                <div class="row price">
+                  <div class="col-8">
+                    <span class="label"><strong>Payment 1</strong>: due by Jun 15, 2020</span>
+                  </div>
+                  <div class="col-4 text-right">
+                    <span class="price"><strong><span id="main-price-in-full"> 2115€</span></strong></span>
+                  </div>
+                </div> 
+              </div>
+
+
+
+              <a href="5.html" class="button yellow">Pay Later in Full</a>
+
+          </div>  
+
+
+
+          <h4>Fees</h4>
+          <p>We all hate hidden charges and fees, but as our bank charges us 4% to process card payments unfortunately we have to charge an additional <strong>transaction fee of 2% if you pay online with a card</strong>.</p>
+
+          <p>Alternatively you can also pay via international bank transfer, however your bank will charge you to make international transfers, a typical cost is around 10€ per transfer, please contact your bank for exact payment details.</p>
+
+
+
+      </div>
+    </div>
+ 
+
+
+
+
+
+            
+        </div>
+        <!-- end ontainer-->
+    
+        
+        
+
+      </div>
+      <!-- main content-ends -->
+   
+      <footer id="main-footer" class="grey-background">
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-12">
+            
+                <img src="assets/img/ebs-logo-blue.svg" alt="EBS blue logo footer" class="img-fluid" id="main-footer__logo">
+            
+            </div>
+
+            <div class="col-12">
+                  <h4 id="main-footer__title">The World’s largest bartender school</h4>                
+            </div>
+
+          </div>
+
+
+            <div class="row" id="main-footer__features">
+
+              <div class="col-12 col-md-6">
+                <p><span class="icon"><i class="fa fa-check" aria-hidden="true"></i> Established in 1999</span></p>
+              </div>
+
+              <div class="col-12 col-md-6">
+                  <p><span class="icon"><i class="fa fa-check" aria-hidden="true"></i> Over 28 schools worldwide</span></p>
+              </div>
+
+              <div class="col-12 col-md-6">
+                  <p><span class="icon"><i class="fa fa-check" aria-hidden="true"></i> 70,000+ satisfied students</span></p>
+              </div>
+
+              <div class="col-12 col-md-6">
+                  <p><span class="icon"><i class="fa fa-check" aria-hidden="true"></i> The most advanced bartender course ever</span></p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+                  <div class="col-12">
+                    <span class="stars"> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></span>
+                  </div>
+
+                  <div class="col-12">
+
+                    <p><span class="review-text">“New skills, new friends and incredible new work experiences. Being part of EBS family has changed my life forever.”</span> <span class="review-author-school">Frank Jacuzzi, EBS New York</span></p>
+
+                  </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <h4 class="info-title">EBS Care</h4> 
+                    <span class="info-address"><span>Carrer de Sepúlveda, 143, A1</span> <span>08011 Barcelona</span> <span>+34 933 80 12 08</span></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+   <!-- CALL US -->
+   <div id="bottom-fixed">
+    <div class="container" id="bottom-ctas">
+      <div class="row">
+        <div class="col-6">
+  
+            <a class="text-center button green" href="" id="call-us">   
+          <i class="fas fa-phone"></i>&nbsp; Call us        
+            </a>
+  
+        </div>
+  
+        <div class="col-6">
+  
+          <a class="text-center button green-empty" href="" id="chat-with-us">   
+                <i class="fa fa-envelope"></i>&nbsp; Write us        
+          </a>
+  
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALS -->
+   <!-- Login Register Modal -->
+   <div class="modal fade" id="login-register-modal" tabindex="-1" role="dialog" aria-labelledby="login-register-title" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="login-register-title">Log in or Sign up</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+            <ul class="nav nav-tabs mb-5" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login-content" role="tab" aria-controls="login-content" aria-selected="true">Log in</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="register-tab" data-toggle="tab" href="#register-content" role="tab" aria-controls="register-content" aria-selected="false">Register</a>
+                </li>
+              </ul>
+
+                    <!-- tab content -->
+                    <div class="tab-content" id="myTabContent">
+                        <!-- login content -->
+                        <div class="tab-pane fade show active" id="login-content" role="tabpanel" aria-labelledby="login-tab">
+
+                            <div class="login-register-buttons">
+                                <a href="6.html" class="button blue-full">
+                                    <span class="button__icon"><i class="fab fa-facebook"></i></span>
+                                    Log in with Facebook
+                                </a>     
+                    
+                                <a href="6.html" class="button blue-full">
+                                    <span class="button__icon"><i class="fab fa-google"></i></span>
+                                    Log in with Google
+                                </a>  
+                            </div>
+                  
+                  
+                            <p class="text-center mb-4 mt-4">or log in with your email</p>
+                  
+                  
+                            <form id="login-form">
+                              <div class="form-group">
+                                  <input type="email" class="form-control" id="login-email" placeholder="Your Email"> 
+                              </div>
+                              <div class="form-group">
+                                  <input type="password" class="form-control" id="login-password" placeholder="Your Password"> 
+                              </div>
+                              <input type="submit" class="button blue-full" value="Login">
+                            </form>
+
+                        </div><!-- end login content -->
+                        
+                        <!-- register content -->
+                        <div class="tab-pane fade" id="register-content" role="tabpanel" aria-labelledby="register-tab">
+
+
+                            <div class="login-register-buttons">
+                                <a href="6.html" class="button blue-full">
+                                    <span class="button__icon"><i class="fab fa-facebook"></i></span>
+                                    Register with Facebook
+                                </a>     
+                    
+                                <a href="6.html" class="button blue-full">
+                                    <span class="button__icon"><i class="fab fa-google"></i></span>
+                                    Register with Google
+                                </a>  
+                    
+                              </div>
+
+                              <p class="text-center mb-4 mt-4">or register with your email</p>
+                  
+                  
+                              <form id="register-form">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="register-email" placeholder="Your Email"> 
+                                </div>
+                                <div class="form-group">
+                                  <input type="password" class="form-control" id="register-password" placeholder="Choose a Password" aria-describedby="passwordHelpBlock"> 
+                                  <small id="passwordHelpBlock" class="form-text text-muted">
+                                    <span>• 6-20 characters long</span> <span>• With letters and numbers</span> <span>• Without spaces or emoji</span>
+                                  </small>
+                                </div>
+                                <input type="submit" class="button blue-full" value="Register">
+                              </form>
+
+                        </div><!-- end register content -->
+                    </div><!-- end tab content -->
+                    
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="modal-close-button">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- END // Login Register Modal -->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/vendor/jquery-slim.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- JS - External file after, baby! --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script> 
+    <script>
+     
+     // menu resize
+      $(window).scroll(function (event) {
+        var y = $(this).scrollTop(); //set position from top when to change style in pixels
+        if (y >= 300) {
+            $('#header').addClass('resized');
+        } else {
+            $('#header').removeClass('resized');
+        }
+    });
+      
+      
+     // Select Type 1      
+    $(document).ready(function() {
+        $('.select-type-one').select2({
+          minimumResultsForSearch: Infinity
+          });
+    });
+    
+
+    // Recap Update
+    document.getElementById("destination-recap").innerHTML = sessionStorage.getItem("next-destination");
+    document.getElementById("date-recap").innerHTML = sessionStorage.getItem("next-date");
+
+    document.getElementById("main-price").innerHTML = sessionStorage.getItem("price-full");
+    document.getElementById("main-price-in-full").innerHTML = sessionStorage.getItem("price-full");
+    var val = sessionStorage.getItem("price-full");
+    document.getElementById("installment-price").innerHTML = val / 4;
+    document.getElementById("installment-price-second").innerHTML = (val - (val / 4)) / 2;
+    document.getElementById("installment-price-third").innerHTML = (val - (val / 4)) / 2;
+    
+
+    </script>
+      
+      
+      
+  </body>
+</html>

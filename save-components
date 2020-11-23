@@ -1,0 +1,31 @@
+COMPONENTS
+
+LANGUAGE SELECTOR FOR DATES
+
+          <!-- component -->
+            
+          <div class="btn-group btn-group-toggle language-selector-for-dates" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> EN
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option2" autocomplete="off"> IT
+            </label>
+          </div>
+
+
+
+
+.language-selector-for-dates{
+    .btn-secondary{
+        background-color:$less-bright-grey;
+        border-color:$less-bright-grey;
+        color:$middle-grey;
+        cursor:pointer;
+        &.active{
+            background-color:$bright-grey;
+            color:$text-grey;
+                box-shadow: 0 0 8px #cdcdcd;
+        }
+    }
+}

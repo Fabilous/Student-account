@@ -1,0 +1,173 @@
+.button{
+ @include transition-one();
+}
+
+   .button{
+       display:block;
+       line-height:1.25rem;
+       padding-top:1rem;
+       padding-bottom:1rem;
+       width:100%;
+       border-radius:8px;
+       /*box-shadow:0 4px 10px rgba(0,2,4,0.28);*/
+       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+       font-size:1.125rem;
+       font-weight:600;
+       letter-spacing:0.5px;
+       text-align:center;
+       box-sizing:border-box;
+       &:hover,&:active,&:focus{
+           text-decoration:none;
+           box-shadow:0 2px 4px rgba(0,0,0,0.2);
+       }
+       &.red-full{
+           background:$red;
+           color:white;
+           &:hover,&:active,&:focus{
+               background:$red-hover;
+           }
+       }
+       &.blue-full{
+            background:$blue;
+            color:white;
+            &:hover,&:active,&:focus{
+                opacity:0.85;
+            }
+        }
+       &.green{
+           background:$green;
+           color:white;
+           &:hover,&:active,&:focus{
+               background:$green;
+               opacity:0.85;
+           }
+       }
+       &.green-empty{
+        padding-top:0.875rem;
+        padding-bottom:0.875rem;
+        background:transparent;
+        color:$green;
+        border:2px solid $green;
+        box-shadow:none;
+        padding-top:0.875rem;
+        padding-bottom:0.875rem;
+        &:hover,&:active,&:focus{
+            background:$green;
+            color:white;
+            box-shadow:0 2px 4px rgba(0,0,0,0.2);
+            border-color:$green;
+            }
+        }
+       &.red-empty{
+           background:transparent;
+           color:$red;
+           border:2px solid $red;
+           box-shadow:none;
+           padding-top: 0.875rem;
+           padding-bottom: 0.875rem;
+           &:hover,&:active,&:focus{
+               background:$red;
+               color:white;
+               box-shadow:0 2px 4px rgba(0,0,0,0.2);
+               border-color:$red;
+           }
+       }
+       &.blue-empty{
+            padding-top:0.875rem;
+            padding-bottom:0.875rem;
+            background:transparent;
+            color:$blue;
+            border:2px solid $blue;
+            box-shadow:none;
+            &:hover,&:active,&:focus{
+                background:$blue;
+                color:white;
+                box-shadow:0 2px 4px rgba(0,0,0,0.2);
+                border-color:$blue;
+            }
+        }
+        &.white-empty{
+            padding-top:0.875rem;
+            padding-bottom:0.875rem;
+            background:transparent;
+            color:white;
+            border:2px solid white;
+            box-shadow:none;
+            &:hover,&:active,&:focus{
+                background:white;
+                color:$text-grey;
+                box-shadow:0 2px 4px rgba(0,0,0,0.2);
+                border-color:white;
+            }
+        }
+       &.yellow{
+           background:$yellow;
+           /*box-shadow:0 2px 4px rgba(0,0,0,0.2);*/
+           font-weight:700;
+           color:$dark-grey;
+           /*box-shadow:0 2px 8px rgba(62,57,57,0.22);*/
+           &:hover,&:active,&:focus{
+               background-color:#ffd733;
+               box-shadow:0 2px 12px rgba(0,0,0,0.22);
+           }
+       }
+       &.white-full{
+            background:white;
+            color:$blue;
+            font-weight:700;
+            &:hover,&:active,&:focus{
+                background-color:$bright-grey;
+                box-shadow:0 2px 12px rgba(0,0,0,0.22);
+            }
+        }
+        &__icon{
+              float:left;
+              width:50px;
+              text-align:center;
+        }
+   }
+
+.blue-background{
+    .button{
+        &.yellow{
+            box-shadow:0 2px 4px rgba(0,0,0,1.4),0 3px 4px rgba(0,0,0,1.2),0 1px 5px rgba(0,0,0,2);
+            &:hover,&:active,&:focus{
+                            box-shadow:0 2px 4px rgba(0,0,0,1.4);
+            }
+        }
+    }
+}
+
+button{
+	border:none;
+	&:hover,button:active,button:focus{
+		outline:0;
+		cursor:pointer;
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 992px) { 
+    .button{
+        display:inline-block;
+        width:auto;
+        font-size:1.25rem;
+        padding-left:3rem;
+        padding-right:3rem;
+        /*&.red-full{
+            line-height:4rem;
+        } 
+        &.red-empty{
+            line-height:3.75rem;  
+        }
+        &.yellow{
+            line-height:3.5rem;  
+        }
+        &.green{
+            line-height:4rem;  
+        }
+        &.green-empty{
+            line-height:3.75rem;  
+        }*/
+    }
+}

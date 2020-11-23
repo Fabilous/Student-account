@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="84px" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>PLAY - new!</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-558.000000, -1822.000000)">
+        <g id="Buttons" transform="translate(0.000000, 1184.000000)" fill="#FFFFFF">
+            <g id="Yellow-dark-background" transform="translate(0.000000, 352.000000)">
+                <g id="PLAY---new!" transform="translate(560.000000, 288.000000)">
+                    <g id="PLAY-Copy">
+                        <ellipse id="Oval-2" stroke="#FFFFFF" stroke-width="3.5" fill-opacity="0.223731884" cx="40.0987654" cy="39.9196998" rx="40.0987654" ry="39.8640374"></ellipse>
+                        <polygon id="Triangle" transform="translate(41.254299, 40.716849) rotate(90.000000) translate(-41.254299, -40.716849) " points="41.2542994 33.2658018 51.5182895 48.1678961 30.9903093 48.1678961"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

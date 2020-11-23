@@ -1,0 +1,962 @@
+.container{
+	max-width:768px;
+}
+
+.main-content{
+  padding-bottom:2.5rem;
+}
+
+h2{
+  margin-bottom:2rem;
+  &.smaller-margin{
+    margin-bottom:1rem;
+  }
+}
+
+.button-continue{
+  margin-top:2rem;
+  margin-bottom:2rem;
+}
+
+/** LOGIN-REGISTER TOP MENU **/
+#login-link{
+  display:inline-block;
+  padding:0.5rem 0.75rem;
+  border:1px solid $less-bright-grey;
+  color: $less-bright-grey;
+  border-radius:8px;
+  @include transition-one();
+  cursor:pointer;
+  &:hover,&:focus,&:active{
+    background:$less-bright-grey;
+    color:white;
+  }
+}
+
+#logged-link{
+  display:inline-block;
+  padding:0.5rem 1.75rem;
+  border:1px solid $blue;
+  color:$blue;
+  border-radius:8px;
+  @include transition-one();
+  cursor:pointer;
+  &:hover,&:focus,&:active{
+    background:$blue;
+    color:white;
+  }
+}
+
+#header{
+  &.with-dropdown{
+    .dropdown-menu{
+      border-color:$blue;
+      border-radius:8px;
+      padding-top:0;
+      padding-bottom:0;
+      .dropdown-divider{
+        margin:0;
+      }
+      .dropdown-item{
+        @include transition-one();
+        padding-top:0.75rem;
+        padding-bottom:0.75rem;
+        font-size:0.875rem;
+        &:focus,&:hover{
+          background:$blue;
+          color:white;
+        }
+        &:first-child{
+          border-radius:8px 8px 0 0;
+        }
+        &:last-child{
+          border-radius:0 0 8px 8px;
+        }
+      }
+    }
+  }
+}
+.show > .dropdown-menu {
+  animation-name: slidenavAnimation;
+  animation-duration:.35s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-name: slidenavAnimation;
+  -webkit-animation-duration:.35s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation-name: slidenavAnimation;
+  -moz-animation-duration:.35s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-fill-mode: forwards;
+}
+@keyframes slidenavAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slidenavAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/********
+LOGIN - REGISTER MODAL
+*********/
+#login-register-modal{
+  button{
+    &.modal-close-button{
+      background:transparent;
+      color:$middle-grey;
+      text-decoration:underline;
+    }
+  }
+  .button{
+    width:100%;
+  }
+}
+
+#passwordHelpBlock{
+  span{
+    display:inline-block;
+    margin-right:0.5rem;
+  }
+}
+
+/****** SELECT 2 *****/
+
+.select2-container{
+	height:44px;
+        .select2-selection--single{
+            border:none;
+                .select2-selection__arrow{
+                    height:44px;
+                    b{
+                    	border-width: 8px 6px 0 6px;
+                    	margin-left:-16px;
+                    }
+                }
+                .select2-selection__rendered{
+                    border:1px solid $less-bright-grey;
+                    background-color:$bright-grey;
+                    line-height:44px;
+                    font-size:0.9rem;
+                    border-radius:4px;
+                    padding:0 1rem;
+                }
+            }
+            .select2-selection--multiple{
+            border:none;
+            height:44px;
+            border:none !important;
+                .select2-selection__arrow{
+                    height:44px;
+                    b{
+                        border-width: 8px 6px 0 6px;
+                        margin-left:-16px;
+                    }
+                }
+                .select2-selection__rendered{
+                    border:1px solid $less-bright-grey;
+                    background-color:$bright-grey;
+                    line-height:39px;
+                    font-size:1rem;
+                    border-radius:4px;
+                    padding:0 1rem;
+                }
+                .select2-selection__choice{
+                    margin-top:8px;
+                    line-height:30px;
+                    padding:0 8px;
+                    background-color:$blue;
+                    color:white;
+                    .select2-selection__choice__remove{
+                        margin-right:8px;
+                        color:white;
+                    }
+                }
+            }
+    &.select2-container--default{
+    	.select2-results>.select2-results__options{
+    		background-color:$bright-grey;
+    	}
+    	.select2-results__option--highlighted[aria-selected]{
+    		background-color:$blue !important;
+    	}
+    	.select2-results__option[aria-selected=true]{
+    		background-color:$less-bright-grey;
+    	}
+        .select2-results__option[aria-disabled=true]{
+            color:#bbb;
+        }
+    }
+    .select2-results__option{
+      padding-left:1rem;
+    }
+            
+}
+
+.select2-dropdown{
+	&.select2-dropdown--below{
+		margin-top:2px;
+	}
+		
+} 
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+	    border-width: 0 6px 8px 6px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+    background-color:$blue;
+}
+
+
+
+/********* RECURRENT COMPONENTS *********/
+
+
+#recap{
+	.inner{
+		padding:0.5rem;
+    border:2px dotted $less-bright-grey;
+    margin-bottom:2rem;
+		p{
+			font-size:0.875rem;
+			line-height:1rem;
+			margin-bottom:0.20rem;
+			&.recap-selection{
+				font-weight:700;
+				a{
+					font-weight:400;
+          color:$text-grey;
+          text-decoration:underline;
+          &::after{
+            background:none;
+            display:none;
+          }
+				}
+			}
+		}
+	}
+}
+
+/****/
+
+#modal-continue{
+    .modal-body{
+        p{
+            span{
+                display:block;
+            }
+        }
+    }
+}
+
+.modal{
+  .button{
+      width:100%;
+  }
+}
+
+
+
+
+
+/********* BOTTOM FIXED CTAs************/
+
+#bottom-fixed{
+  width:100%;
+  position:fixed;
+  bottom:0px; 
+  background-color:white;
+  box-shadow:0 -1px 3px rgba(0,0,0,0.2);
+  .button{
+    font-size:1rem;
+    width:100%;
+  }
+  .col-6{
+    &:first-child{
+      padding-right:0.32rem;
+    }
+    &:last-child{
+      padding-left:0.32rem;
+    }
+  }
+  #bottom-ctas{
+    padding:0.325rem 0.5rem;
+  }
+}
+
+#call-us{
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+}
+
+#chat-with-us{
+  padding-top:0.375rem;
+  padding-bottom:0.375rem;
+}
+
+
+/********    FOOTER    ************/
+#main-footer{
+  padding-top:2.5rem;
+  padding-bottom:5rem;
+  &__logo{
+    margin-bottom:1rem;
+  }
+  &__title{
+    color:$blue;
+    font-weight:600;
+    font-size:1.125rem;
+    margin-bottom:1.5rem;
+  }
+  &__features{
+    margin-bottom:1rem;
+  }
+  .fa-check{
+    color:$yellow;
+    margin-right:0.35rem;
+  }
+  .stars{
+    display:block;
+    margin-bottom:0.25rem;
+    i{
+      color:$yellow;
+    }
+  }
+  .review-text{
+    font-style:italic;
+  }
+  .review-author-school{
+    display:inline-block;
+  }
+  .info-title{
+    display:block;
+    margin-top:1rem;
+    margin-bottom:0.5rem;
+    font-size:1.125rem;
+    font-weight:600;
+  }
+  .info-address{
+    span{
+      display:block;
+    }
+  }
+}
+
+
+
+/******  SECOND STEP  ******/
+
+
+
+@media (min-width: 576px) { 
+  .no-gutters.two-selectors{
+    .col-12{
+        &:first-child{
+          padding-right:5px;
+        }
+        &:last-child{
+          padding-left:5px;
+        }
+    }
+  }
+}
+
+
+
+p.option-caption{
+  font-size:0.875rem;
+  line-height:1rem;
+}
+
+.form-group.from-group-destination{
+  margin-bottom:0.5rem;
+}
+
+#presenting-installments{
+    padding:0.5rem 0.75rem;
+    margin-top:0.5rem;
+    border:1px solid $blue;
+    background-color:$bright-grey;
+    border-radius:0.25rem;
+    span{
+      display:block;
+      &.label{
+        font-size:0.875rem;
+      }
+      &.explanation{
+        font-size:0.75rem;
+        color:$middle-grey;
+      }
+      &#installment-price{
+        font-size:0.875rem;
+      }
+    }
+}
+
+@media (max-width: 320px) { 
+  .no-gutters.two-selectors{
+    .col-6{
+      width:100%;
+      max-width:100%;
+      flex: 0 0 100%;
+      &:last-child{
+        padding-left:0;
+      }
+
+      p.option-caption{
+        margin-bottom:0.5rem;
+      }
+    }
+  }
+}
+
+/*******
+MOBI SELECTOR 
+********/
+
+
+.mbsc-ios .mbsc-sc-itm{
+  font-family:'Source Sans Pro', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:1rem;
+}
+
+.mbsc-ios .mbsc-sc-whl-gr-3d .mbsc-sc-itm-3d{
+  font-size:0.875rem;
+}
+
+.mbsc-ios .mbsc-sc-itm-sel, .mbsc-ios .mbsc-sc-whl-gr-3d .mbsc-sc-itm{
+  color:$text-grey;
+}
+
+.mbsc-ios.mbsc-fr-inline .mbsc-fr-w{
+  margin-top:0;
+  background-color:#f7f7f7;
+}
+
+.mbsc-ios .mbsc-sc-whl-gr-c{
+  padding:0;
+}
+
+.mbsc-ios .mbsc-sc-whl-gr-3d .mbsc-sc-itm{
+  text-align:center;
+}
+
+.mbsc-ios .mbsc-sc-whl .mbsc-sel-gr{
+  font-weight:bold;
+  color:$less-bright-grey;
+  font-size:1.35rem;
+}
+
+.mbsc-ios .mbsc-sc-whl-gr{
+  max-width:100% !important;
+}
+
+
+
+/******  RESERVE LIST FORM  ******/
+
+/*#reserve-list-form{
+  .inner{
+    margin-top:0.5rem;
+    padding-top:1rem;
+    border-top:1px solid $less-bright-grey;
+  }
+  form{
+    display:block;
+    margin-top:0.5rem;
+    padding-top:1rem;
+    border-top:1px solid $less-bright-grey;
+  }
+  input,.button{
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+  }
+  .button{
+    margin-top:1rem;
+    margin-bottom:0.5rem;
+    font-size:1rem;
+  }
+  .custom-select{
+    border-right:0;
+  }
+}/*
+
+
+/******  THIRD STEP - EXTRA-OPTIONS-PAGE  ******/
+
+.add-on-info{
+    padding:0 0 0.875rem 0;
+    span{
+        font-size:0.875rem;
+        &.add-on-label{
+            padding-bottom:0.5rem;
+            display:block;
+        }
+        &.toggle-link{
+            cursor:pointer;
+            text-decoration:underline;
+        }
+        &.original-price{
+          text-decoration:line-through;
+        }
+    }
+    p{
+        font-size:0.875rem;
+        margin-bottom:0;
+        line-height:1.175rem;
+    }
+}
+
+.extra-codes{
+  span.toggle-link{
+    cursor:pointer;
+    text-decoration:underline;
+  }
+}
+
+#price-box{
+  width:100%;
+  display:block;
+  color:white;
+  padding:0.725rem 0;
+  .label{
+      display:block;
+      padding-top:0.5rem;
+      font-weight:600;
+  }
+  .price{
+      font-weight:600;
+  }
+  .main-price{
+      margin-bottom:0.5rem;
+      font-size:1.5rem;
+  }
+  .secondary-price{
+      .label{
+          padding-top:0;
+          font-size:0.785rem;
+          line-height:1rem;
+          &.secondary{
+              font-weight:400;
+          }
+      }
+  }
+}
+
+#extra-price-container{
+  padding-bottom:6rem;
+}
+
+/******  FORTH STEP - PAYMENT SECTION  ******/
+
+#payment-options-img{
+  margin-bottom:1rem;
+  max-height:40px;
+}
+
+.payment-method{
+  padding:0.875rem;
+  padding-top:1.875rem;
+  margin-bottom:1.25rem;
+  background-color:#fdfdfd; 
+  border:1px solid #dbdbdb;
+  box-shadow:0px 2px 4px rgba(214,214,214,0.5);
+  .prices{
+    padding-top:1rem;
+  }
+  .with-collapse-link{
+    margin-bottom:0.75rem;
+  }
+  .collapse-paragraph{
+    padding:0.25rem 0;
+    margin-bottom:0;
+    border-top:1px solid $less-bright-grey;
+    font-size:0.875rem;
+  }
+  .button{
+    padding-bottom:0.875rem;
+    padding-top:0.875rem;
+    margin-top:2rem;
+    margin-bottom:1rem;
+  }
+}
+
+
+
+
+@media (min-width: 992px) {
+  .payment-method{
+    .button{
+      line-height:2rem;
+    }
+  }
+} 
+
+
+/******  FIFTH STEP - LOGIN/REGISTER  ******/
+
+
+.login-register-buttons{
+  .button{
+    width:100%;
+    margin-bottom:1rem;
+    text-align:left;
+  }
+}
+
+
+
+
+/******  SIXTH AND SEVENTH STEP ******/
+
+
+#personal-details-form{
+  .input-group{
+    .input-group-prepend{
+      .custom-select{
+        border-right:0.5px;
+      }
+    }
+  }
+  .button{
+    margin-top:2rem;
+  }
+  .form-check-inline{
+    margin-right:1rem;
+    margin-top:0.25rem;
+    label{
+      font-size:0.875rem;
+    }
+  }
+  #birth-date{
+    .custom-select{
+      &:first-child{
+        border-right:0.5px;
+      }
+      &:last-child{
+        border-left:0.5px;
+      }
+    }
+  }
+  .date-label{
+    font-size:0.875rem;
+  }
+  /** Modifying  Awesome checkbox CSS**/
+  .radio label::before{
+    background-color:$bright-grey;
+    border:1px solid $less-bright-grey;
+    top:2px
+  }
+  .checkbox label::before{
+    background-color:$bright-grey;
+    border:1px solid $less-bright-grey;
+    top:4px;
+  }
+  .radio label::after{
+    top:5px;
+  }
+  .checkbox label::after{
+    top:3.5px;
+  }
+}
+
+
+
+/******  SIXTH AND SEVENTH STEP ******/
+
+#recap-page{
+  .confirmation-sidebar{
+    .fa-check{
+      color:green;
+    }
+    .payment-confirmed{
+      color:green;
+      padding:5px;
+      background:white;
+    }
+  }
+  section{
+    margin-top:1.5rem;
+    &:first-child{
+      margin-top:0;
+    }
+  }
+  p{
+    margin-bottom:0.25rem;
+  }
+  h5{
+    margin-bottom:0.5rem;
+  }
+  .price{
+    font-weight:bold;
+  }
+  ul.checklist{
+    li{
+      margin-bottom:0.5rem;
+    }
+  }
+  .button-box{
+    margin-top:2rem;
+    .button.red-full,.button.blue-full{
+      margin-top:1rem;
+      font-size:1rem;
+      .button__icon{
+        width:auto;
+        float:none;
+        clear:left;
+        margin-right:15px;
+
+      }
+    }
+  }
+
+}
+
+#login-form,#register-form{
+  margin-bottom:2rem;
+}
+
+
+
+/******
+*******
+SWITCHES  
+********
+******/
+
+.containing-switch{
+    border-bottom:1px solid $bright-grey;
+    .row.icon{
+      margin-bottom:0.5rem;
+      i{
+        font-size:1.125rem
+      }
+    }
+    &.form-group{
+      margin-bottom:1.25rem;
+      padding-bottom:0.25rem;
+      .extra-codes{
+        input{
+          z-index:0;
+        }
+      }
+    }
+}
+
+
+/**   CSS FOR SWITCH  ****/
+
+//
+// Switches for Bootstrap 4.
+//
+// - Fully customizable with Sass variables
+// - No JavaScript required
+// - Fully accessible
+//
+
+//
+// IMPORTANT: These Sass variables are defined in Bootstrap's variables.scss. You should import that file first, then remove these.
+//
+
+$font-size-base: 1rem;
+$font-size-lg: ($font-size-base * 1.25);
+$font-size-sm: ($font-size-base * .875);
+$input-height: 2.375rem;
+$input-height-sm: 1.9375rem;
+$input-height-lg: 3rem;
+$input-btn-focus-width: .2rem;
+$custom-control-indicator-bg: #dee2e6;
+$custom-control-indicator-disabled-bg: #e9ecef;
+$custom-control-description-disabled-color: #868e96;
+$white: white;
+$theme-colors: (
+  'primary': $green
+);
+
+//
+// These variables can be used to customize the switch component.
+//
+$switch-height: calc(#{$input-height} * .8) !default;
+$switch-height-sm: calc(#{$input-height-sm} * .8) !default;
+$switch-height-lg: calc(#{$input-height-lg} * .8) !default;
+$switch-border-radius: $switch-height !default;
+$switch-bg: $custom-control-indicator-bg !default;
+$switch-checked-bg: map-get($theme-colors, 'primary') !default;
+$switch-disabled-bg: $custom-control-indicator-disabled-bg !default;
+$switch-disabled-color: $custom-control-description-disabled-color !default;
+$switch-thumb-bg: $white !default;
+$switch-thumb-border-radius: 50% !default;
+$switch-thumb-padding: 2px !default;
+$switch-focus-box-shadow: 0 0 0 $input-btn-focus-width rgba(map-get($theme-colors, 'primary'), .25);
+$switch-transition: .2s all !default;
+
+.switch {
+  font-size: $font-size-base;
+  position: relative;
+              &:focus{
+       outline: none;   
+        }
+  input {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    background: none;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    padding: 0;
+        &:focus{
+       outline: none;   
+        }
+
+    + label {
+      position: relative;
+      min-width: calc(#{$switch-height} * 2);
+      border-radius: $switch-border-radius;
+      height: $switch-height;
+      line-height: $switch-height;
+      display: inline-block;
+      cursor: pointer;
+      outline: none;
+      user-select: none;
+      vertical-align: middle;
+      text-indent: calc(calc(#{$switch-height} * 2) + .5rem);
+    }
+
+    + label::before,
+    + label::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(#{$switch-height} * 2);
+      bottom: 0;
+      display: block;
+
+    }
+
+    + label::before {
+      right: 0;
+      background-color: $switch-bg;
+      border-radius: $switch-border-radius;
+      transition: $switch-transition;
+                    &:focus{
+       outline: none;   
+        }
+    }
+
+    + label::after {
+      top: $switch-thumb-padding;
+      left: $switch-thumb-padding;
+      width: calc(#{$switch-height} - calc(#{$switch-thumb-padding} * 2));
+      height: calc(#{$switch-height} - calc(#{$switch-thumb-padding} * 2));
+      border-radius: $switch-thumb-border-radius;
+      background-color: $switch-thumb-bg;
+      transition: $switch-transition;
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+    }
+
+    &:checked + label::before {
+      background-color: $switch-checked-bg;
+    }
+
+    &:checked + label::after {
+      margin-left: $switch-height;
+    }
+
+    &:focus + label::before {
+      outline: none;
+      box-shadow: $switch-focus-box-shadow;
+    }
+
+    &:disabled + label {
+      color: $switch-disabled-color;
+      cursor: not-allowed;
+    }
+
+    &:disabled + label::before {
+      background-color: $switch-disabled-bg;
+    }
+  }
+
+  // Small variation
+  &.switch-sm {
+    font-size: $font-size-sm;
+              &:focus{
+       outline: none;   
+        }
+    input {
+      + label {
+        min-width: calc(#{$switch-height-sm} * 2);
+        height: $switch-height-sm;
+        line-height: $switch-height-sm;
+        text-indent: calc(calc(#{$switch-height-sm} * 2) + .5rem);
+      }
+
+      + label::before {
+        width: calc(#{$switch-height-sm} * 2);
+                      &:focus{
+       outline: none;   
+        }
+      }
+
+      + label::after {
+        width: calc(#{$switch-height-sm} - calc(#{$switch-thumb-padding} * 2));
+        height: calc(#{$switch-height-sm} - calc(#{$switch-thumb-padding} * 2));
+      }
+
+      &:checked + label::after {
+        margin-left: $switch-height-sm;
+      }
+    }
+  }
+
+  // Large variation
+  &.switch-lg {
+    font-size: $font-size-lg;
+
+    input {
+      + label {
+        min-width: calc(#{$switch-height-lg} * 2);
+        height: $switch-height-lg;
+        line-height: $switch-height-lg;
+        text-indent: calc(calc(#{$switch-height-lg} * 2) + .5rem);
+      }
+
+      + label::before {
+        width: calc(#{$switch-height-lg} * 2);
+      }
+
+      + label::after {
+        width: calc(#{$switch-height-lg} - calc(#{$switch-thumb-padding} * 2));
+        height: calc(#{$switch-height-lg} - calc(#{$switch-thumb-padding} * 2));
+      }
+
+      &:checked + label::after {
+        margin-left: $switch-height-lg;
+      }
+    }
+  }
+
+  + .switch {
+    margin-left: 1rem;
+  }
+}
+

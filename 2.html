@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>2 - Language, Destination and Date Selection</title>
+    <meta name="description" content="LOAP is COOL">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#d44a49">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
+    <!-- *********** ONLY LOADED IN THIS HTML!  -->
+    <link rel="stylesheet" href="dist/css/mobiscroll.jquery.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    
+    <link rel=" stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    
+    <!-- Extra Tags -->
+    <meta property="og:image" content="assets/img/shake-your-future-og.jpg"/>
+    <meta property="og:description" content="LOAP is COOL" />
+
+    
+
+      
+  </head>
+  <body>
+    
+    <div class="up-1" id="header">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-8">
+                  <img src="assets/img/ebs-logo.svg" alt="EBS logo" class="img-fluid" id="logo">
+              </div>
+              <div class="col-4 text-right">
+               <a href="#" id="login-link" data-toggle="modal" data-target="#login-register-modal">Login</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    
+    <div class="main-content">
+      
+      
+    <!-- main content start -->
+        
+      <div class="container">
+        
+        
+        <!-- recap -->
+        
+        <div class="row">
+          
+          <div id="recap" class="col-12">
+            
+            <div class="inner">
+            
+              <p class="recap-selection">International Bartender Course <a href="1.html">(change)</a></p>
+              
+            </div>
+            
+          </div>
+        
+        </div>
+        
+  
+      <!-- form start -->
+<form>
+  <div class="row no-gutters two-selectors">
+
+    <div class="col-12 col-sm-6">
+      <div class="form-group">
+          <label for="language-selection"><strong>Course language</strong></label>
+          <select class="select-type-one form-control" name="language-selection" style="width:100%" id="language-selection">
+            <option value="1">English</option>
+            <option value="2">Danish</option>
+            <option value="3">Finnish</option>
+            <option value="4">French</option>
+            <option value="5">German</option>
+            <option value="6">Italian</option>
+            <option value="7">Spanish</option>
+            <option value="8">Swedish</option>
+          </select>
+        </div>
+      </div>
+
+  <div class="col-12 col-sm-6">
+      <div class="form-group from-group-destination">
+              <label for="destination-selection"><strong>Amsterdam prices from 1940€</strong></label>
+        <select class="select-type-one form-control" id="destination-selection" onchange="myFunction()">
+          <option value="1940">Amsterdam</option>
+          <option value="2340">Bad Gastein</option>
+          <option value="2040">Barcelona</option>
+          <option value="1940">Berlin</option>
+          <option value="1915">Cape town</option>
+          <option value="1915">Dublin</option>
+          <option value="1875">Kos</option>
+          <option value="2115">London</option>
+          <option value="1890">Madrid</option>
+          <option value="2055">Mallorca</option>
+          <option value="2090">Miami</option>
+          <option value="1915">Milan</option>
+          <option value="1840">New York</option>
+          <option value="1915">Paris</option>
+          <option value="1890">Phuket</option>
+          <option value="1915">Rome</option>
+          <option value="1705">Stockholm</option>
+          <option value="2090">Sydney</option>
+        </select>
+     </div>
+
+  </div>
+
+</div> 
+
+
+
+            <!-- component -->
+
+
+                  <div class="mbsc-form-group form-group">
+                      <label for="dates-selection"><strong>Course dates</strong></label>
+                      <div>
+                          <select name="dates-selection" id="dates-selection" data-enhance="false">
+                              <optgroup label="2019">
+                                  <option disabled>07 Oct - 01 Nov (9:00 - 15:00)</option>
+                                  <option>04 Nov - 29 Nov (9:00 - 15:00)</option>
+                                  <option>02 Dic - 27 Dic (9:00 - 15:00)</option>
+                                  <option>02 Dic - 27 Dic (16:00 - 21:00)</option>
+                              </optgroup>
+                              <optgroup label="2020">
+                                  <option>06 Jan - 31 Jan (16:00 - 21:00)</option>
+                                  <option>03 Feb - 28 Feb (16:00 - 21:00)</option>
+                                  <option>01 Mar - 26 Mar (9:00 - 15:000)</option>
+                                  <option>01 Mar - 26 Mar (16:00 - 21:00)</option>
+                                  <option>29 Apr - 23 Apr (16:00 - 21:00)</option>  
+                                  <option>27 Abr - 22 May (9:00 - 15:00)</option>
+                                  <option>27 Abr - 22 May (16:00 - 21:00)</option>                 
+                                  <option>02 Jun - 27 Jun (16:00 - 21:00)</option>
+                                  <option>06 Jul - 31 Jul (16:00 - 21:00)</option>
+                                </optgroup>
+                          </select>
+                      </div>
+                    </div>
+
+
+              <div class="row main-price">
+                <div class="col-8">
+                  <span class="label">Price</span>
+                </div>
+                <div class="col-4 text-right">
+                  <span class="price" id="main-price">1940€</span>
+                </div>
+              </div> 
+              
+              <div class="row secondary-price">         
+                    <div class="col-12">  
+
+                      <div  id="presenting-installments">
+
+                        <div class="row">
+
+                          <div class="col-12">
+                              <span class="explanation">You can pay in 3 installments with no extra charges.</span>
+                          </div>
+
+                        </div>
+                    
+                        <div class="row">
+                          <div class="col-8">
+                            <span class="label">Price of first installment</span>                           
+                          </div>
+                          <div class="col-4 text-right">
+                            <span class="price" id="installment-price">485€</span>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+              </div> 
+
+            
+</form>
+
+
+
+                          <a href="3.html" class="button yellow button-continue">Continue to Extra Options</a>
+
+            
+        </div>
+        <!-- end container-->
+    
+        
+        
+
+
+      </div>
+      <!-- main content-ends -->
+   
+      <footer id="main-footer" class="grey-background">
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-12">
+            
+                <img src="assets/img/ebs-logo-blue.svg" alt="EBS blue logo footer" class="img-fluid" id="main-footer__logo">
+            
+            </div>
+
+            <div class="col-12">
+                  <h4 id="main-footer__title">The World’s largest bartender school</h4>                
+            </div>
+
+          </div>
+
+
+            <div class="row" id="main-footer__features">
+
+              <div class="col-12 col-md-6">
+                <p><span class="icon"><i class="fa fa-check" aria-hidden="true"></i> Established in 1999</span></p>
+              </div>
+
+              <div class="col-12 col-md-6">
+                  <p><span class="icon"><i class="fa fa-check" aria-hidden="true"></i> Over 28 schools worldwide</span></p>
+              </div>
+
+              <div class="col-12 col-md-6">
+                  <p><span class="icon"><i class="fa fa-check" aria-hidden="true"></i> 70,000+ satisfied students</span></p>
+              </div>
+
+              <div class="col-12 col-md-6">
+                  <p><span class="icon"><i class="fa fa-check" aria-hidden="true"></i> The most advanced bartender course ever</span></p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+                  <div class="col-12">
+                    <span class="stars"> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></span>
+                  </div>
+
+                  <div class="col-12">
+
+                    <p><span class="review-text">“New skills, new friends and incredible new work experiences. Being part of EBS family has changed my life forever.”</span> <span class="review-author-school">Frank Jacuzzi, EBS New York</span></p>
+
+                  </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <h4 class="info-title">EBS Care</h4> 
+                    <span class="info-address"><span>Carrer de Sepúlveda, 143, A1</span> <span>08011 Barcelona</span> <span>+34 933 80 12 08</span></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+   <!-- CALL US -->
+   <div id="bottom-fixed">
+    <div class="container" id="bottom-ctas">
+      <div class="row">
+        <div class="col-6">
+  
+            <a class="text-center button green" href="" id="call-us">   
+          <i class="fas fa-phone"></i>&nbsp; Call us        
+            </a>
+  
+        </div>
+  
+        <div class="col-6">
+  
+            <a class="text-center button green-empty" href="" id="chat-with-us">   
+                <i class="fa fa-envelope"></i>&nbsp; Write us        
+          </a>
+  
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALS -->
+   <!-- Login Register Modal -->
+   <div class="modal fade" id="login-register-modal" tabindex="-1" role="dialog" aria-labelledby="login-register-title" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="login-register-title">Log in or Sign up</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+            <ul class="nav nav-tabs mb-5" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login-content" role="tab" aria-controls="login-content" aria-selected="true">Log in</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="register-tab" data-toggle="tab" href="#register-content" role="tab" aria-controls="register-content" aria-selected="false">Register</a>
+                </li>
+              </ul>
+
+                    <!-- tab content -->
+                    <div class="tab-content" id="myTabContent">
+                        <!-- login content -->
+                        <div class="tab-pane fade show active" id="login-content" role="tabpanel" aria-labelledby="login-tab">
+
+                            <div class="login-register-buttons">
+                                <a href="6.html" class="button blue-full">
+                                    <span class="button__icon"><i class="fab fa-facebook"></i></span>
+                                    Log in with Facebook
+                                </a>     
+                    
+                                <a href="6.html" class="button blue-full">
+                                    <span class="button__icon"><i class="fab fa-google"></i></span>
+                                    Log in with Google
+                                </a>  
+                            </div>
+                  
+                  
+                            <p class="text-center mb-4 mt-4">or log in with your email</p>
+                  
+                  
+                            <form id="login-form">
+                              <div class="form-group">
+                                  <input type="email" class="form-control" id="login-email" placeholder="Your Email"> 
+                              </div>
+                              <div class="form-group">
+                                  <input type="password" class="form-control" id="login-password" placeholder="Your Password"> 
+                              </div>
+                              <input type="submit" class="button blue-full" value="Login">
+                            </form>
+
+                        </div><!-- end login content -->
+                        
+                        <!-- register content -->
+                        <div class="tab-pane fade" id="register-content" role="tabpanel" aria-labelledby="register-tab">
+
+
+                            <div class="login-register-buttons">
+                                <a href="6.html" class="button blue-full">
+                                    <span class="button__icon"><i class="fab fa-facebook"></i></span>
+                                    Register with Facebook
+                                </a>     
+                    
+                                <a href="6.html" class="button blue-full">
+                                    <span class="button__icon"><i class="fab fa-google"></i></span>
+                                    Register with Google
+                                </a>  
+                    
+                              </div>
+
+                              <p class="text-center mb-4 mt-4">or register with your email</p>
+                  
+                  
+                              <form id="register-form">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="register-email" placeholder="Your Email"> 
+                                </div>
+                                <div class="form-group">
+                                  <input type="password" class="form-control" id="register-password" placeholder="Choose a Password" aria-describedby="passwordHelpBlock"> 
+                                  <small id="passwordHelpBlock" class="form-text text-muted">
+                                    <span>• 6-20 characters long</span> <span>• With letters and numbers</span> <span>• Without spaces or emoji</span>
+                                  </small>
+                                </div>
+                                <input type="submit" class="button blue-full" value="Register">
+                              </form>
+
+                        </div><!-- end register content -->
+                    </div><!-- end tab content -->
+                    
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="modal-close-button">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- END // Login Register Modal -->
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/vendor/jquery-slim.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/mobiscrolls.jquery.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- JS - External file after, baby! --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script> 
+     <script>
+     
+     // menu resize
+      $(window).scroll(function (event) {
+        var y = $(this).scrollTop(); //set position from top when to change style in pixels
+        if (y >= 300) {
+            $('#header').addClass('resized');
+        } else {
+            $('#header').removeClass('resized');
+        }
+    });
+      
+      
+     // Select Type 1      
+    $(document).ready(function() {
+        $('.select-type-one').select2({
+          minimumResultsForSearch: Infinity
+          });
+    });
+
+    // Select Type 2      
+             $(document).ready(function() {
+        $('.select-type-two').select2({
+          minimumResultsForSearch: Infinity,
+          maximumSelectionLength: 2
+          });
+    });
+
+
+
+     // Mobiscroll Select
+    mobiscroll.settings = {
+        lang: 'es',   // Specify language like: lang: 'pl' or omit setting to use default
+        theme: 'ios'            // Specify theme like: theme: 'ios' or omit setting to use default
+    };
+    
+    $(function () {
+    
+        // Mobiscroll Select initialization
+        $('#demo-bottom').mobiscroll().select({
+            display: 'bottom'   // Specify display mode like: display: 'bottom' or omit setting to use default
+        });
+    
+        // Mobiscroll Select initialization
+        $('#demo-top').mobiscroll().select({
+            display: 'top'      // Specify display mode like: display: 'bottom' or omit setting to use default
+        });
+    
+        // Mobiscroll Select initialization
+        $('#demo-center').mobiscroll().select({
+            display: 'center'   // Specify display mode like: display: 'bottom' or omit setting to use default
+        });
+    
+        // Mobiscroll Select initialization
+        $('#demo-bubble').mobiscroll().select({
+            display: 'bubble'   // Specify display mode like: display: 'bottom' or omit setting to use default
+        });
+    
+        // Mobiscroll Select initialization
+        $('#dates-selection').mobiscroll().select({
+            display: 'inline',  // Specify display mode like: display: 'bottom' or omit setting to use default
+            showInput: false    // More info about showInput: https://docs.mobiscroll.com/4-8-3/select#opt-showInput
+        });
+    
+        // Mobiscroll Select initialization
+        $('#demo-form').mobiscroll().form();
+    
+    });
+    
+
+    // Modifying prices
+    
+
+    function myFunction() {
+      var x = document.getElementById("destination-select").value;
+      document.getElementById("main-price").innerHTML = x + "€";
+      document.getElementById("installment-price").innerHTML = x / 4 + "€";
+      sessionStorage.setItem("price", x);
+
+      var e = document.getElementById("destination-select");
+      var destination = e.options[e.selectedIndex].text;
+      sessionStorage.setItem("next-destination", destination);
+      
+      var f = document.getElementById("dates-selection");
+      var destination = f.options[f.selectedIndex].text;
+      sessionStorage.setItem("next-date", destination);
+    }
+
+
+
+      </script>
+
+<script>
+  </script>
+
+      
+  </body>
+</html>
+
+
