@@ -8,14 +8,31 @@ body{
         .student-account-nav{
             a{
                 @include transition-one();
+                padding: .4rem 1rem .5rem;
+                margin-left: 0.5rem;
+                border-radius: 8px;
                 &:hover,&:focus,&:active
                 {
-                    color: $blue
+                    background-color: $bright-grey;
                 }
                 &.active{
                     &:hover,&:focus,&:active{
-                        color:white
+                        color:white;
+                        background-color: $blue;
                     }
+                }
+            }
+        }
+        .content-nav{
+            a{
+                @include transition-one();
+                padding: .3rem 0.875rem .35rem;
+                font-size: .875rem;
+                background-color: $bright-grey;
+                border-radius: 8px;
+                &:hover{
+                    background-color: $blue;
+                    color: white;
                 }
             }
         }
@@ -123,13 +140,18 @@ body{
                 padding-left: 1.5rem
             }
         }
+        .content-with-nav{
+            h3{
+                padding-top: 1rem
+            }
+        }
         .alert{
             a{
                 color: $text-grey;
                 text-decoration: underline
             }
         }
-        /* form specifics*/
+        /* forms generals for student account*/
         form{
             .form-group {
                 margin-bottom: 1.5rem;

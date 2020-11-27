@@ -88,29 +88,15 @@ a {
     -moz-transform: translateY(0px);
     transform: translateY(0px); }
 .main-content p a, .main-content ul a {
-  position: relative;
-  display: inline-block;
-  padding: 0; }
-  .main-content p a::after, .main-content ul a::after {
-    position: absolute;
-    top: 90%;
-    left: 0;
-    width: 100%;
-    height: 1.5px;
-    background: #dd2727;
-    content: '';
-    opacity: 0;
-    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
-    transition: opacity 0.3s, transform 0.3s;
-    -webkit-transform: translateY(2px);
-    -moz-transform: translateY(2px);
-    transform: translateY(2px); }
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border 500ms ease;
+  -moz-transition: border 500ms ease;
+  -ms-transition: border 500ms ease;
+  -o-transition: border 500ms ease;
+  transition: border 500ms ease; }
   .main-content p a:hover::after, .main-content p a:focus::after, .main-content ul a:hover::after, .main-content ul a:focus::after {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    transform: translateY(0px); }
+    color: #dd2727;
+    border-bottom: 2px solid #dd2727; }
 
 /*******
 SHADOWS
@@ -1222,7 +1208,7 @@ SWITCHES
     margin-left: 1rem; }
 
 body.student-account {
-  /* form specifics*/ }
+  /* forms generals for student account*/ }
   @media (max-width: 768px) {
     body.student-account .student-account-nav {
       margin-top: 0.5rem; } }
@@ -1231,10 +1217,27 @@ body.student-account {
     -moz-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
     -ms-transform: all .25s ease-in-out;
-    transition: all .25s ease-in-out; }
+    transition: all .25s ease-in-out;
+    padding: .4rem 1rem .5rem;
+    margin-left: 0.5rem;
+    border-radius: 8px; }
     body.student-account .student-account-nav a:hover, body.student-account .student-account-nav a:focus, body.student-account .student-account-nav a:active {
-      color: #063456; }
+      background-color: #f7f7f7; }
     body.student-account .student-account-nav a.active:hover, body.student-account .student-account-nav a.active:focus, body.student-account .student-account-nav a.active:active {
+      color: white;
+      background-color: #063456; }
+  body.student-account .content-nav a {
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -ms-transform: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    padding: .3rem 0.875rem .35rem;
+    font-size: .875rem;
+    background-color: #f7f7f7;
+    border-radius: 8px; }
+    body.student-account .content-nav a:hover {
+      background-color: #063456;
       color: white; }
   body.student-account h2 {
     font-size: 2rem;
@@ -1307,6 +1310,8 @@ body.student-account {
       margin-top: 0.45rem; }
     body.student-account .sa-box .form-check-label {
       padding-left: 1.5rem; }
+  body.student-account .content-with-nav h3 {
+    padding-top: 1rem; }
   body.student-account .alert a {
     color: #373636;
     text-decoration: underline; }
