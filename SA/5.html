@@ -77,6 +77,57 @@
             <h2>Help center</h2>
 
             <div class="row mt-5">
+              <div class="col-12">
+
+                  <h3>FAQ</h3>
+                  <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+
+              </div>
+
+              <div class="col-12">
+                <div class="faq-accordion">
+                      <div class="card">
+                          <div class="card-header" id="headingOne">
+                              
+                                  <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><span class="text">Lorem ipsum, or lipsum as it is sometimes known</span> <i class="fa fa-plus"></i></button>									
+                             
+                          </div>
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                              <div class="card-body">
+                                  <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</a></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" id="headingTwo">
+
+                                  <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo"><span class="text">Lorem ipsum, or lipsum as it is sometimes known</span> <i class="fa fa-plus"></i></button>
+
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                              <div class="card-body">
+                                  <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" id="headingThree">
+
+                                  <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseThree"><span class="text">Lorem ipsum, or lipsum as it is sometimes known</span> <i class="fa fa-plus"></i></button>                     
+
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                              <div class="card-body">
+                                  <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row mt-5">
                 <div class="col-12">
 
                     <h3>Contact</h3>
@@ -210,10 +261,23 @@
           });
     });
 
-
-
-
     </script>
+
+<script>
+  $(document).ready(function(){
+      // Add minus icon for collapse element which is open by default
+      $(".collapse.show").each(function(){
+        $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+      });
+      
+      // Toggle plus minus icon on show hide of collapse element
+      $(".collapse").on('show.bs.collapse', function(){
+        $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+      }).on('hide.bs.collapse', function(){
+        $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+      });
+  });
+</script>
 
 
       

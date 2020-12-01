@@ -13,6 +13,9 @@
 body {
   color: #373636; }
 
+html {
+  scroll-behavior: smooth; }
+
 .container {
   padding-right: 1.5rem;
   padding-left: 1.5rem; }
@@ -1243,7 +1246,9 @@ body.student-account {
     font-size: 2rem;
     line-height: 2rem; }
   body.student-account .button {
-    font-size: 1.125rem; }
+    font-size: 1.125rem;
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem; }
     body.student-account .button.review {
       padding-left: 2rem;
       padding-right: 2rem; }
@@ -1279,6 +1284,10 @@ body.student-account {
       body.student-account .sa-box .sa-info.sa-info-completed a {
         color: #373636;
         text-decoration: underline; }
+        body.student-account .sa-box .sa-info.sa-info-completed a.button {
+          text-decoration: none; }
+          body.student-account .sa-box .sa-info.sa-info-completed a.button.blue-empty:hover {
+            color: white; }
       body.student-account .sa-box .sa-info .payment-info span {
         line-height: 1.75; }
       body.student-account .sa-box .sa-info .payment-due-soon .fa {
@@ -1315,6 +1324,31 @@ body.student-account {
   body.student-account .alert a {
     color: #373636;
     text-decoration: underline; }
+  body.student-account .faq-accordion .card {
+    border: 1px solid #D0D0D0;
+    margin-bottom: 1rem; }
+  body.student-account .faq-accordion .card-header {
+    background-color: #f7f7f7;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+  body.student-account .faq-accordion button {
+    width: 100%;
+    white-space: normal;
+    position: relative;
+    text-align: left;
+    padding-left: 0; }
+    body.student-account .faq-accordion button:focus, body.student-account .faq-accordion button:hover {
+      text-decoration: none; }
+    body.student-account .faq-accordion button .text {
+      padding-right: 40px;
+      color: #373636;
+      font-weight: 600; }
+    body.student-account .faq-accordion button .fa {
+      position: absolute;
+      width: 16px;
+      right: 0;
+      top: 26%;
+      color: #E24444; }
   body.student-account form .form-group {
     margin-bottom: 1.5rem; }
   body.student-account form .form-control {
