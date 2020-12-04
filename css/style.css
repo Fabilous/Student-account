@@ -1215,20 +1215,6 @@ body.student-account {
   @media (max-width: 768px) {
     body.student-account .student-account-nav {
       margin-top: 0.5rem; } }
-  body.student-account .student-account-nav a {
-    -webkit-transition: all .25s ease-in-out;
-    -moz-transition: all .25s ease-in-out;
-    -o-transition: all .25s ease-in-out;
-    -ms-transform: all .25s ease-in-out;
-    transition: all .25s ease-in-out;
-    padding: .4rem 1rem .5rem;
-    margin-left: 0.5rem;
-    border-radius: 8px; }
-    body.student-account .student-account-nav a:hover, body.student-account .student-account-nav a:focus, body.student-account .student-account-nav a:active {
-      background-color: #f7f7f7; }
-    body.student-account .student-account-nav a.active:hover, body.student-account .student-account-nav a.active:focus, body.student-account .student-account-nav a.active:active {
-      color: white;
-      background-color: #063456; }
   body.student-account .content-nav a {
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;

@@ -5,24 +5,6 @@ body{
                 margin-top: 0.5rem;
             }
         }
-        .student-account-nav{
-            a{
-                @include transition-one();
-                padding: .4rem 1rem .5rem;
-                margin-left: 0.5rem;
-                border-radius: 8px;
-                &:hover,&:focus,&:active
-                {
-                    background-color: $bright-grey;
-                }
-                &.active{
-                    &:hover,&:focus,&:active{
-                        color:white;
-                        background-color: $blue;
-                    }
-                }
-            }
-        }
         .content-nav{
             a{
                 @include transition-one();
